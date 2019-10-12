@@ -21,6 +21,11 @@ export default {
   padding: 0;
 }
 
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 html,body,#app {
   height: 100%;
 }

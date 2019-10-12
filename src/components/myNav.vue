@@ -4,7 +4,7 @@
   class="nav"
   mode="horizontal"
   @select="handleSelect"
-  router="true"
+  :router="activeFlag"
   background-color="#333744">
   <el-menu-item index="/mine">工作台</el-menu-item>
   <el-menu-item index="/mine1">项目</el-menu-item>
@@ -20,7 +20,8 @@
     data() {
       return {
         activeIndex: '1',
-        activeIndex2: '1'
+        activeIndex2: '1',
+        activeFlag:true
       };
     },
     methods: {
@@ -50,4 +51,7 @@
      .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus, .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover, .el-menu--horizontal>.el-submenu .el-submenu__title:hover{
        color:white;
      }
+     .el-menu.el-menu--horizontal {
+    border-bottom: none;
+}
 </style>
