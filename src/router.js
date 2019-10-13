@@ -36,6 +36,11 @@ export default new Router({
       path: '/mine3',
       name: 'mine3',
       component: () => import( './components/Mine3.vue')
+    },
+    {
+      path: '/formstudy',
+      name: 'formstudy',
+      component: () => import( './components/formstudy.vue')
     }
   ]
 })

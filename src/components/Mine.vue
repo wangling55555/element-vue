@@ -66,7 +66,7 @@ export default {
           address: "上海市普陀区金沙江路 1518 弄"
         }
       ],
-      labelManage:true,
+      labelManage:false,
       dialogTableVisible: false,
       dialogFormVisible: false,
       form: {
